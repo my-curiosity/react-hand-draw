@@ -1,0 +1,55 @@
+.stdsize {
+    width: 640px;
+    height: 480px;
+}
+
+.dblsize {
+    width: 1280px;
+    height: 480px;
+}
+
+#container {
+    display: flex;
+    background-color: #101010;
+    font-family: sans-serif;
+}
+
+.videocontainer {
+    composes: stdsize;
+    background-image: url("/lib/assets/no-video.svg");
+    background-position: center;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.layer {
+    composes: stdsize;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dynamiclayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stack {
+    composes: stdsize;
+    position: relative;
+    border-left: thin dashed black;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.mirrored {
+    transform: scaleX(-1);
+}
+
+button {
+    margin: auto;
+}
