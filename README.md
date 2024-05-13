@@ -1,6 +1,6 @@
 # React Hand Draw
 
-A ReactJS component for drawing using hand movements in the air. Utilizes [tfjs/mediapipe hand-pose-detection ML model](https://github.com/tensorflow/tfjs-models/tree/master/hand-pose-detection) and [react-webcam](https://github.com/mozmorris/react-webcam); requires a visible hand palm on camera.
+A ReactJS component for drawing using hand movements in the air. Utilizes [mediapipe](https://developers.google.com/mediapipe/solutions/vision/hand_landmarker/web_js)/[tfjs](https://github.com/tensorflow/tfjs-models/tree/master/hand-pose-detection) handpose detection ML models and [react-webcam](https://github.com/mozmorris/react-webcam); requires a visible hand palm on camera.
 
 ## Installation
 
