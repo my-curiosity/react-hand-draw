@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "type": "module",
     "license": "Apache-2.0",
-    "main": "dist/main.js",
+    "main": "dist/react-hand-draw.js",
     "types": "dist/main.d.ts",
     "files": [
         "dist",
