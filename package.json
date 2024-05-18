@@ -1,6 +1,6 @@
 {
     "name": "@my-curiosity/react-hand-draw",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "type": "module",
     "license": "Apache-2.0",
     "main": "dist/react-hand-draw.js",
