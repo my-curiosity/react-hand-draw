@@ -225,20 +225,18 @@ export function HandDraw({
             id={`${styles.container}`}
             className={`${webcamVisible ? styles.dblsize : styles.stdsize}`}
         >
+            <Controls
+                controlLightsVisible={controlLightsVisible}
+                webcamReady={webcamActive}
+                modelReady={context?.model != undefined}
+                onWebcamToggle={handleWebcamToggle}
+                onCanvasRefresh={handleCanvasRefresh}
+            />
             <div
                 className={`${styles.videocontainer} ${
                     !webcamVisible && styles.invisible
-                }`}
+                } ${styles.stack}`}
             >
-                {webcamVisible && (
-                    <Controls
-                        controlLightsVisible={controlLightsVisible}
-                        webcamReady={webcamActive}
-                        modelReady={context?.model != undefined}
-                        onWebcamToggle={handleWebcamToggle}
-                        onCanvasRefresh={handleCanvasRefresh}
-                    />
-                )}
                 {webcamActive && (
                     <Webcam
                         ref={webcamRef}
@@ -259,15 +257,6 @@ export function HandDraw({
             </div>
 
             <div className={`${!webcamVisible ? styles.layer : styles.stack} `}>
-                {!webcamVisible && (
-                    <Controls
-                        controlLightsVisible={controlLightsVisible}
-                        webcamReady={webcamActive}
-                        modelReady={context?.model != undefined}
-                        onWebcamToggle={handleWebcamToggle}
-                        onCanvasRefresh={handleCanvasRefresh}
-                    />
-                )}
                 <canvas
                     ref={ptrCanvasRef}
                     id="ptr-canvas"

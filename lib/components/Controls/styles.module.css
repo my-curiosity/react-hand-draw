@@ -1,11 +1,12 @@
-#status {
-    border-radius: "9999px";
+.controls {
     display: flex;
     gap: 4px;
     z-index: 10;
     margin-left: 14px;
 }
-#status > p {
+.controls > p {
+    align-self: center;
+    margin: 0;
     font-size: 14px;
     color: white;
 }

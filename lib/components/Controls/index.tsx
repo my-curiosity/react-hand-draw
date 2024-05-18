@@ -18,7 +18,7 @@ function Controls({
     onCanvasRefresh
 }: ControlsProps) {
     return (
-        <div id={`${styles.status}`} className={`${hdstyles.dynamiclayer} `}>
+        <div className={`${styles.controls} ${hdstyles.dynamiclayer}`}>
             {controlLightsVisible && (
                 <>
                     <StatusLight
