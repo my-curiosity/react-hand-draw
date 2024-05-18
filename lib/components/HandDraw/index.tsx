@@ -39,7 +39,7 @@ export function HandDraw({
     webcamVisible = true,
     controlLightsVisible = true,
     detectorRuntime = "mediapipe",
-    canvasColorPickerPosition = "up",
+    canvasColorPickerPosition = "right",
     canvasColorPickerSize = 18,
     canvasColors = ["red", "pink", "white", "yellow", "green", "blue", "black"],
     canvasDefaultColor = "green"
